@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --background: #041f3f;
+    --cor-primaria: #0A3871; 
+    --cor-secundaria: #e6e8f5;
+    --cor-terciaria: rgb(84, 101, 117);
+}   
+
+*{
+    font-family: "IBM Plex Mono", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: var(--background);
+}
+
+header{
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 6%;
+}
+
+main{
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    justify-content:space-between;
+    gap: 3%;
+    height: 900px;
+}
+
+/*//////////////////////////////////////////////////////
+///////////////*Conteudo da coluna esquerda ///////////
+/////////////////////////////////////////////////////*/
+
+.conteudo_principal{
+    width: 70%;
+    height: 780px;
+}
+.conteudo_principal_textarea{
+    background-color: var(--background);
+    border: none;
+    resize: none;
+    color: var(--cor-secundaria);
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5% 1%; 
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px ;
+}
+
+::placeholder {color: var(--cor-terciaria);}
+    .conteudo_principal_textarea:focus {
+        outline: none;
+}
+
+.conteudo_principal_aviso{
+    display: flex;
+    gap: 0.5rem;
+    color: var(--cor-secundaria);
+}
+
+/*//////////////////////////////////////////////////////
+///////////////*Conteudo da coluna direita ///////////
+////////////////////////////////////////////////////*/
+
+.conteudo_resultado{
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 885px;
+    position: relative;
+    top: -80px;
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+}
+
+.conteudo_resultado_textarea{
+    background: var(--cor-secundaria);
+    background-image: url(/img/High\ quality\ products\ 1\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    text-transform: lowercase;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    padding: 15% 10% 30% 10%;
+    resize: none;
+    width: 100%;
+    height: 80%;
+    border-radius: 24px;
+
+} 
+
+.conteudo_resultado_textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.conteudo_resultado_menssagem{
+    
+    padding: 5%;
+    position: absolute;
+    margin-top: 500px;
+    z-index: 1;
+}
+
+
+#conteudo_resultado_titulo{
+    font-size: 24px;
+}
+
+#conteudo_resultado_titulo, #conteudo_resultado_texto{
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 1%;
+}
+
+
+/*//////////////////////////////////////////////////////
+///////////////*Media Query* ///////////
+/////////////////////////////////////////////////////*/
+
+
+@media screen and (max-width: 1100px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .conteudo_principal{
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo_principal_textarea{
+        height: 450px;
+        font-size: 1.8rem;
+    }
+
+    .conteudo_resultado{
+        width: 100%;
+        height: 15%;
+        position:static;
+    }
+    
+    .conteudo_resultado_textarea{
+        background-image: none;
+        font-size: 1.8rem;
+        padding: 2%;   
+        height: 100%;    
+        margin-bottom: 10px;
+    }
+    .conteudo_resultado_menssagem{
+        top: 350px;
+        padding: 0 10%;
+    }
+
+}
+
+@media screen and (max-width: 580){
+    .conteudo_principal_textarea{
+        height: 350px;
+    }
+
+    .conteudo_resultado{
+        height: 20%;
+    }
+    .conteudo_resultado_menssagem{
+        top: 300px;
+    }
+
+    .conteudo_resultado_titulo{
+        font-size: 12px;
+    }
+    
+    .conteudo_resultado_texto{
+        font-size: 12px;
+    }
+}

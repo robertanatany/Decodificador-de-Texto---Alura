@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Styles/botoes.css">
+    <title>Decodificador de Texto</title>
+
+</head>
+<body>
+    <header>
+            <img src="img/Vector.svg" class="logo" alt="logo da alura">
+    </header>
+    
+    <main class="conteudo">
+
+        <section class="conteudo_principal">
+            <textarea class="conteudo_principal_textarea" rows="31" cols="4" placeholder="Digite aqui o seu texto"></textarea>
+            
+            <div class="conteudo_principal_aviso">
+                <img class="conteudo_principal_aviso_icon" src="img/Vector@2x.svg" alt="">
+                <p class="conteudo_principal_aviso_texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+                
+            <div class="conteudo_principal_botoes">
+                <button class="btn_criptografar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn_descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="conteudo_resultado">
+            <textarea class="conteudo_resultado_textarea" disabled onclick="btnCopiar()"></textarea>
+            <div class="conteudo_resultado_menssagem">
+                <h3 class="conteudo_resultado_titulo" id="conteudo_resultado_titulo">Nenhuma mensagem encontrada</h3>
+                <p class="conteudo_resultado_texto" id="conteudo_resultado_texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <button class="btn_copiar" onclick="btnCopiar()">Copiar</button>
+        </section>    
+        
+    </main>
+    <footer>Desenvolvido por Roberta Natany</footer>
+</body>
+<script src="script.js"></script>
+</html>
