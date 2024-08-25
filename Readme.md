@@ -48,3 +48,4 @@ Você pode [acessar o código fonte do projeto inicial](https://github.com/rober
 Melhorias futuras
 - Validação de Entrada: Implementação de validações para garantir que apenas textos válidos sejam processados.
 - Implementar botão de dark mode e light mode no cabeçalho.
+- Ajustar textArea de acordo com o conteúdo no layout responsivo. 
