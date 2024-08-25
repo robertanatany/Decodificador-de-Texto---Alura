@@ -37,7 +37,7 @@ Durante o desenvolvimento deste projeto, aprendi a trabalhar com:
 
 - Uso de Variáveis no :root: Facilita a gestão de cores e outros valores globais no CSS.
 - Responsividade: Aplicação do Flexbox para garantir que a interface seja agradável em diferentes dispositivos.
-- Importação de Fontes: Customizando a aparência do texto para melhorar a usabilidade e estética do projeto.
+- JavaScript: Uso de matrizes, criação de funções e loops for para processar o texto.
 
 
 ## 📁 Acesso ao projeto
