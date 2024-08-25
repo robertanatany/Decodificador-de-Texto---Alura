@@ -42,7 +42,7 @@ Durante o desenvolvimento deste projeto, aprendi a trabalhar com:
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial]()
+Você pode [acessar o código fonte do projeto inicial](https://github.com/robertanatany/Decodificador-de-Texto---Alura.git)
 
 
 Melhorias futuras
